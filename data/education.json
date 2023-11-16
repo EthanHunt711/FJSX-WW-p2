@@ -1,0 +1,65 @@
+{
+    "University": [
+        {
+            "universityName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "thesis": ""
+        },
+        {
+            "universityName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "thesis": ""
+        },
+        {
+            "universityName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "thesis": ""
+        }
+    ],
+
+    "colledge": [
+        {
+            "colledgeName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "practicePlace": ""
+        },
+        {
+            "colledgeName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "practicePlace": ""
+        },
+        {
+            "colledgeName": "",
+            "educationName": "",
+            "programType": "",
+            "startDate":  "",
+            "endDate":  "",
+            "practicePlace": ""
+        }
+    ],
+
+    "highschool": [
+        {
+            "schoolName": "",
+            "subject": "",
+            "startDate":  "",
+            "endDate":  ""
+        }
+    ]
+    
+}

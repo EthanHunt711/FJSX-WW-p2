@@ -1,0 +1,101 @@
+{
+    "1990-1999":[
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        }
+    ],
+
+    "2000-2009":[
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        }
+    ],
+
+    "2010-2019":[
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        }
+    ],
+    
+    "2020-2029":[
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        },
+        {
+            "jobTitle": "",
+            "position": "",
+            "period" : "",
+            "startDate": "",
+            "endDate": "",
+            "current" : true
+        }
+    ]
+}
