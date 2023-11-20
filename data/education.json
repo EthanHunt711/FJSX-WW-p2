@@ -1,29 +1,42 @@
 {
     "University": [
         {
-            "universityName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
+            "universityName": "Uppsala Universitetet",
+            "country": "Sweden",
+            "educationName": "Computatioanl Linguistics",
+            "programLevel": "Master",
+            "startDate":  "2021",
             "endDate":  "",
             "thesis": "",
+            "graduated": false
+        },
+        {
+            "universityName": "Linköpings Universitetet",
+            "country": "Sweden",
+            "educationName": "Applied Ethics",
+            "programLevel": "Master",
+            "startDate":  "2019",
+            "endDate":  "2020",
+            "thesis": "Meborgarelön i ett digitaliserade värld",
             "graduated": true
         },
         {
-            "universityName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
-            "endDate":  "",
+            "universityName": "Linköpings Universitetet",
+            "country": "Sweden",
+            "educationName": "Language and Culture in Europe",
+            "programLevel": "Master",
+            "startDate":  "2009",
+            "endDate":  "2015",
             "thesis": "",
-            "graduated": true
+            "graduated": false
         },
         {
-            "universityName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
-            "endDate":  "",
+            "universityName": "Sistan and Baluchistan University",
+            "country": "Iran",
+            "educationName": "Translation Studies - English-Persian and vice versa",
+            "programLevel": "Bachelor",
+            "startDate":  "2002",
+            "endDate":  "2006",
             "thesis": "",
             "graduated": true
         }
@@ -31,40 +44,34 @@
 
     "colledge": [
         {
-            "colledgeName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
+            "colledgeName": "Chas Academy",
+            "country":"Sweden",
+            "educationName": "Fullstack Javascript Webdeveloper",
+            "programType": "Yrkeshögskola",
+            "startDate":  "2023",
             "endDate":  "",
             "practicePlace": "",
-            "graduated": true
+            "graduated": false
         },
         {
-            "colledgeName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
-            "endDate":  "",
+            "colledgeName": "TUC Yrkeshögskola",
+            "country":"Sweden",
+            "educationName": "Testare",
+            "programType": "Yrkeshögskola",
+            "startDate":  "2019",
+            "endDate":  "2020",
             "practicePlace": "",
-            "graduated": true
-        },
-        {
-            "colledgeName": "",
-            "educationName": "",
-            "programType": "",
-            "startDate":  "",
-            "endDate":  "",
-            "practicePlace": "",
-            "graduated": true
+            "graduated": false
         }
     ],
 
     "highschool": [
         {
-            "schoolName": "",
-            "subject": "",
-            "startDate":  "",
-            "endDate":  "",
+            "schoolName": "Kherad Highschhol",
+            "country":"Iran",
+            "subject": "Mathematics",
+            "startDate":  "1996",
+            "endDate":  "2000",
             "graduated": true
         }
     ]
