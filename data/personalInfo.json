@@ -1,0 +1,11 @@
+{
+    "personalInfo":[
+        {
+            "firstName": "Ali",
+            "lastName": "Esmaeeli",
+            "placeOfBirth": "Iran",
+            "placeOfResidence": "Sweden",
+            "dateOfBirth": "1980-09-13"
+        }
+    ]
+}
