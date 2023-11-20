@@ -1,0 +1,51 @@
+{
+    "projets":[
+        {
+            "tile":"Hotel Reception App",
+            "affiliateion":"TUC Yrkeshögskola",
+            "projectsType":"Class Assignment",
+            "period":"2 months",
+            "endDate":"2019",
+            "programmingLanguage":"Java",
+            "completed":true
+        },
+        {
+            "tile":"Daily Schedule App",
+            "affiliateion":"TUC Yrkeshögskola",
+            "projectsType":"Class Assignment",
+            "period":"3 months",
+            "endDate":"2020",
+            "programmingLanguage":"C#",
+            "completed":true
+        },
+        {
+            "tile":"Text Search Engine",
+            "affiliateion":"Uppsala University",
+            "projectsType":"Class Assignment",
+            "period":"3 months",
+            "endDate":"2021",
+            "programmingLanguage":"Python",
+            "completed":true
+        },
+        {
+            "tile":"Machine Translator",
+            "affiliateion":"Uppsala University",
+            "projectsType":"Class Assignment",
+            "period":"3 months",
+            "endDate":"2021",
+            "programmingLanguage":"Python",
+            "completed":true
+        },
+        {
+            "tile":"CV Website",
+            "affiliateion":"Chas Academy",
+            "projectsType":"Class Assignment",
+            "period":"2 months",
+            "endDate":"2023",
+            "programmingLanguage":"HTML, CSS and JavaScript",
+            "completed":true
+        }
+
+
+    ]
+}
