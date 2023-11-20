@@ -151,23 +151,27 @@ main {
     width: 100%;
 }
 
-.infoPreview{
+#infoPreview{
     background-color: #042331;
     width: 100%;
     height: 250px;
     border-radius: 5px;
+    color: #fff;
+    padding: 1em;
 }
 
 h1{
     color: #042331;
 }
 
-.previewTiles{
+#previewTiles{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    gap: .5em;
+    
 }
 
 .previewTilesG1,
@@ -176,6 +180,7 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: .5em;
 }
 
 .previewTilesG101,
@@ -183,7 +188,7 @@ h1{
 .previewTilesG201,
 .previewTilesG202{
     background-color: #0d74f5;
-    width: 150px;
+    width: 180px;
     height: 150px;
     border-radius: 2px;
 }
