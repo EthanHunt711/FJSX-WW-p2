@@ -28,11 +28,20 @@
             "completed":true
         },
         {
+            "tile":"Syntactic Parser",
+            "affiliateion":"Uppsala University",
+            "projectsType":"Class Assignment",
+            "period":"3 months",
+            "endDate":"2022",
+            "programmingLanguage":"Python",
+            "completed":true
+        },
+        {
             "tile":"Machine Translator",
             "affiliateion":"Uppsala University",
             "projectsType":"Class Assignment",
             "period":"3 months",
-            "endDate":"2021",
+            "endDate":"2022",
             "programmingLanguage":"Python",
             "completed":true
         },
