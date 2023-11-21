@@ -1,8 +1,8 @@
 {
-    "projets":[
+    "projects":[
         {
-            "tile":"Hotel Reception App",
-            "affiliateion":"TUC Yrkeshögskola",
+            "title":"Hotel Reception App",
+            "affiliation":"TUC Yrkeshögskola",
             "projectsType":"Class Assignment",
             "period":"2 months",
             "endDate":"2019",
@@ -10,8 +10,8 @@
             "completed":true
         },
         {
-            "tile":"Daily Schedule App",
-            "affiliateion":"TUC Yrkeshögskola",
+            "title":"Daily Schedule App",
+            "affiliation":"TUC Yrkeshögskola",
             "projectsType":"Class Assignment",
             "period":"3 months",
             "endDate":"2020",
@@ -19,8 +19,8 @@
             "completed":true
         },
         {
-            "tile":"Text Search Engine",
-            "affiliateion":"Uppsala University",
+            "title":"Text Search Engine",
+            "affiliation":"Uppsala University",
             "projectsType":"Class Assignment",
             "period":"3 months",
             "endDate":"2021",
@@ -28,8 +28,8 @@
             "completed":true
         },
         {
-            "tile":"Syntactic Parser",
-            "affiliateion":"Uppsala University",
+            "title":"Syntactic Parser",
+            "affiliation":"Uppsala University",
             "projectsType":"Class Assignment",
             "period":"3 months",
             "endDate":"2022",
@@ -37,8 +37,8 @@
             "completed":true
         },
         {
-            "tile":"Machine Translator",
-            "affiliateion":"Uppsala University",
+            "title":"Machine Translator",
+            "affiliation":"Uppsala University",
             "projectsType":"Class Assignment",
             "period":"3 months",
             "endDate":"2022",
@@ -46,8 +46,8 @@
             "completed":true
         },
         {
-            "tile":"CV Website",
-            "affiliateion":"Chas Academy",
+            "title":"CV Website",
+            "affiliation":"Chas Academy",
             "projectsType":"Class Assignment",
             "period":"2 months",
             "endDate":"2023",
