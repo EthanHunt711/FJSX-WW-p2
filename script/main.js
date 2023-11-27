@@ -71,47 +71,91 @@ async function getProjects(){
         const previewTiles = document.getElementById('previewTiles');
 
 
+        for (var i = jsonProjectData.projects.length - 1; i >= jsonProjectData.projects.length -4; i--){
+            
+            var obj = jsonProjectData.projects[i];
+            console.log(obj);
+            
+            // //create tile
+            // const projectsTile = document.createElement('div');
+            // projectsTile.className = 'projectsTile';
+            
+            // //create tile title
+            // const projectsTileTitle = document.createElement('div');
+            // projectsTileTitle.className = 'projectsTileTitle';
+            // projectsTileTitle.textContent = project.title;
+            // projectsTile.appendChild(projectsTileTitle);
+
+            // //create elemets list
+            // const projectTileDescription = document.createElement('ul');
+            // projectTileDescription.className = 'projecctTileDescription';
+            // projectsTile.appendChild(projectTileDescription);
+
+            // //Affiliation
+            // const affiliationDescription = document.createElement('li');
+            // affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
+
+            // //Type of projects
+            // projectTileDescription.appendChild(affiliationDescription);
+            // const projectTypeDescription = document.createElement('li');
+            // projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
+
+            // // the last update
+            // projectTileDescription.appendChild(projectTypeDescription);
+            // const endDateDescription = document.createElement('li');
+            // endDateDescription.textContent = `Last Update: ${project.endDate}`;
+
+            // //Programming Language used
+            // projectTileDescription.appendChild(endDateDescription);
+            // const programmingLanguageDescription = document.createElement('li');
+            // programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
+            // projectTileDescription.appendChild(programmingLanguageDescription);
+            
+            // console.log(projectsTile);
+            // previewTiles.appendChild(projectsTile);
+        };
+
         //function for looping the data file 
-        jsonProjectData.projects.forEach(function(project){
+        // jsonProjectData.projects.forEach(function(project){
             
-            //create tile
-            const projectsTile = document.createElement('div');
-            projectsTile.className = 'projectsTile';
+        //     //create tile
+        //     const projectsTile = document.createElement('div');
+        //     projectsTile.className = 'projectsTile';
             
-            //create tile title
-            const projectsTileTitle = document.createElement('div');
-            projectsTileTitle.className = 'projectsTileTitle';
-            projectsTileTitle.textContent = project.title;
-            projectsTile.appendChild(projectsTileTitle);
+        //     //create tile title
+        //     const projectsTileTitle = document.createElement('div');
+        //     projectsTileTitle.className = 'projectsTileTitle';
+        //     projectsTileTitle.textContent = project.title;
+        //     projectsTile.appendChild(projectsTileTitle);
 
-            //create elemets list
-            const projectTileDescription = document.createElement('ul');
-            projectTileDescription.className = 'projecctTileDescription';
-            projectsTile.appendChild(projectTileDescription);
+        //     //create elemets list
+        //     const projectTileDescription = document.createElement('ul');
+        //     projectTileDescription.className = 'projecctTileDescription';
+        //     projectsTile.appendChild(projectTileDescription);
 
-            //Affiliation
-            const affiliationDescription = document.createElement('li');
-            affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
+        //     //Affiliation
+        //     const affiliationDescription = document.createElement('li');
+        //     affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
 
-            //Type of projects
-            projectTileDescription.appendChild(affiliationDescription);
-            const projectTypeDescription = document.createElement('li');
-            projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
+        //     //Type of projects
+        //     projectTileDescription.appendChild(affiliationDescription);
+        //     const projectTypeDescription = document.createElement('li');
+        //     projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
 
-            // the last update
-            projectTileDescription.appendChild(projectTypeDescription);
-            const endDateDescription = document.createElement('li');
-            endDateDescription.textContent = `Last Update: ${project.endDate}`;
+        //     // the last update
+        //     projectTileDescription.appendChild(projectTypeDescription);
+        //     const endDateDescription = document.createElement('li');
+        //     endDateDescription.textContent = `Last Update: ${project.endDate}`;
 
-            //Programming Language used
-            projectTileDescription.appendChild(endDateDescription);
-            const programmingLanguageDescription = document.createElement('li');
-            programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
-            projectTileDescription.appendChild(programmingLanguageDescription);
+        //     //Programming Language used
+        //     projectTileDescription.appendChild(endDateDescription);
+        //     const programmingLanguageDescription = document.createElement('li');
+        //     programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
+        //     projectTileDescription.appendChild(programmingLanguageDescription);
             
-            console.log(projectsTile);
-            previewTiles.appendChild(projectsTile);
-        });
+        //     console.log(projectsTile);
+        //     previewTiles.appendChild(projectsTile);
+        // });
 
         
         // //creating the first group of tile
