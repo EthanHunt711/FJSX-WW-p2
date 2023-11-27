@@ -186,6 +186,19 @@ h1{
     
 }
 
+
+.projectsTile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d74f5;
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1em;
+}
+
 .previewTilesG1,
 .previewTilesG2{
     display: flex;
@@ -215,7 +228,7 @@ h1{
 /* FOOTER */
 .footer {
     position: fixed;
-    height: 50px;
+    height: 75px;
     width: 100%;
     bottom: 0;
     display: flex;
