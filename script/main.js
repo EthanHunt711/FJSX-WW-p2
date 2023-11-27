@@ -56,17 +56,11 @@ async function getInfoPreview(){
 };
 
 
+
 //function for displaying the latest projects
 async function getProjects(){
-    //arrays for saving jason data in
-    let titlesArray = [];
-    let affiliation = [];
-    let projectsType = [];
-    let period =[];
-    let endDate = [];
-    let programmingLanguage = [];
-    
-
+    // counter for making id
+ 
 
     let responseProject = await fetch("/data/projects.json")
     if(responseProject.ok){
@@ -75,52 +69,96 @@ async function getProjects(){
 
         //targeting the div 
         const previewTiles = document.getElementById('previewTiles');
-        
-        //creating the first group of tile
-        const previewTilesG1 = document.createElement('div');
-        previewTilesG1.className = 'previewTilesG1';
-        previewTiles.appendChild(previewTilesG1);
-
-        //creating the second group of tiles        
-        const previewTilesG2 = document.createElement('div');
-        previewTilesG2.className = 'previewTilesG2';
-        previewTiles.appendChild(previewTilesG2);
-
-        //creating the first tile in the first group
-        const previewTilesG101 = document.createElement('div');
-        previewTilesG101.className = 'previewTilesG101';
-        previewTilesG1.appendChild(previewTilesG101);
-
-        //creating the second tile in the first group
-        const previewTilesG102 = document.createElement('div');
-        previewTilesG102.className = 'previewTilesG102';
-        previewTilesG1.appendChild(previewTilesG102);
-
-        //creating the first tile in the second group
-        const previewTilesG201 = document.createElement('div');
-        previewTilesG201.className = 'previewTilesG201';
-        previewTilesG2.appendChild(previewTilesG201);
-
-        //creating the second tile in the second group
-        const previewTilesG202 = document.createElement('div');
-        previewTilesG202.className = 'previewTilesG202';
-        previewTilesG2.appendChild(previewTilesG202);
 
 
         //function for looping the data file 
         jsonProjectData.projects.forEach(function(project){
-            //creating the title 
-            const projectTitle = document.createElement('h3');
-            projectTitle.className = 'projectTileTitle';
-            projectTitle.textContent = project.title;
-            titlesArray.push(projectTitle.innerHTML);
             
+            //create tile
+            const projectsTile = document.createElement('div');
+            projectsTile.className = 'projectsTile';
             
+            //create tile title
+            const projectsTileTitle = document.createElement('div');
+            projectsTileTitle.className = 'projectsTileTitle';
+            projectsTileTitle.textContent = project.title;
+            projectsTile.appendChild(projectsTileTitle);
+
+            //create elemets list
+            const projectTileDescription = document.createElement('ul');
+            projectTileDescription.className = 'projecctTileDescription';
+            projectsTile.appendChild(projectTileDescription);
+
+            //Affiliation
+            const affiliationDescription = document.createElement('li');
+            affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
+
+            //Type of projects
+            projectTileDescription.appendChild(affiliationDescription);
+            const projectTypeDescription = document.createElement('li');
+            projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
+
+            // the last update
+            projectTileDescription.appendChild(projectTypeDescription);
+            const endDateDescription = document.createElement('li');
+            endDateDescription.textContent = `Last Update: ${project.endDate}`;
+
+            //Programming Language used
+            projectTileDescription.appendChild(endDateDescription);
+            const programmingLanguageDescription = document.createElement('li');
+            programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
+            projectTileDescription.appendChild(programmingLanguageDescription);
+            
+            console.log(projectsTile);
+            previewTiles.appendChild(projectsTile);
         });
 
         
+        // //creating the first group of tile
+        // const previewTilesG1 = document.createElement('div');
+        // previewTilesG1.className = 'previewTilesG1';
+        // previewTiles.appendChild(previewTilesG1);
 
-        console.log(titlesArray);
+        // //creating the second group of tiles        
+        // const previewTilesG2 = document.createElement('div');
+        // previewTilesG2.className = 'previewTilesG2';
+        // previewTiles.appendChild(previewTilesG2);
+
+        // //creating the first tile in the first group
+        // const previewTilesG101 = document.createElement('div');
+        // previewTilesG101.className = 'previewTilesG101';
+        // previewTilesG1.appendChild(previewTilesG101);
+        // // previewTilesG101.appendChild(document.getElementById('projectsTile6'));
+        
+       
+        
+
+        // //creating the second tile in the first group
+        // const previewTilesG102 = document.createElement('div');
+        // previewTilesG102.className = 'previewTilesG102';
+        // previewTilesG1.appendChild(previewTilesG102);
+        // // previewTilesG102.appendChild(document.getElementById('projectsTile5'));
+        
+
+        // //creating the first tile in the second group
+        // const previewTilesG201 = document.createElement('div');
+        // previewTilesG201.className = 'previewTilesG201';
+        // previewTilesG2.appendChild(previewTilesG201);
+        // // previewTilesG201.appendChild(document.getElementById('projectsTile4'));
+        
+
+        // //creating the second tile in the second group
+        // const previewTilesG202 = document.createElement('div');
+        // previewTilesG202.className = 'previewTilesG202';
+        // previewTilesG2.appendChild(previewTilesG202);
+        // // previewTilesG202.appendChild(document.getElementById('projectsTile3'));
+        
+
+        
+
+        
+
+        
 
     } else {
         console.log(responseProject.status)
