@@ -75,42 +75,42 @@ async function getProjects(){
         previewTilesG1.className = 'previewTilesG1'
         previewTiles.appendChild(previewTilesG1);
 
-
+        // reverse loop for finding the last two projects and creating the upper tiles
         for (var i = jsonProjectData.projects.length - 1; i >= jsonProjectData.projects.length -2; i--){
             
             var project = jsonProjectData.projects[i];
-            console.log(i, project);
+            
 
             //constructing upper tiles
             const upperTiles = document.createElement('div');
             upperTiles.className = `previewTilesG10${i}`;
             previewTilesG1.appendChild(upperTiles);
-
+            // title
             const tileTiltle = document.createElement('div');
-            tileTiltle.id = `upperTile${i}`
+            tileTiltle.className = 'tileTitle'
             tileTiltle.textContent = project.title;
             upperTiles.appendChild(tileTiltle);
             
-
+            // list for description
             const tileDescription = document.createElement('ul');
             tileDescription.className = 'tileDescription';
             upperTiles.appendChild(tileDescription);
-
+            //project manager
             const projectManager = document.createElement('li');
             projectManager.className = 'projectManager';
             projectManager.textContent = `Manager: ${project.affiliation}`;
             tileDescription.appendChild(projectManager);
-            
+            // type of project
             const projectType = document.createElement('li');
             projectType.className = 'projectType';
             projectType.textContent = `Project Type: ${project.projectsType}`;
             tileDescription.appendChild(projectType);
-
+            //last updated
             const projectEndDate = document.createElement('li');
             projectEndDate.className = 'projectEndDate';
-            projectEndDate.textContent = `Completed in ${project.endDate}`;
+            projectEndDate.textContent = `Last updated: ${project.endDate}`;
             tileDescription.appendChild(projectEndDate);
-
+            //programming language
             const projectProgrammingLanguage = document.createElement('li');
             projectProgrammingLanguage.className = 'programmingLanguage';
             projectProgrammingLanguage.textContent = `Language: ${project.programmingLanguage}`;
@@ -119,57 +119,54 @@ async function getProjects(){
 
         };
 
-        //create the first group
+        //create the second group
         const previewTilesG2 = document.createElement('div');
         previewTilesG2.className = 'previewTilesG1'
         previewTiles.appendChild(previewTilesG2);
         
+
+        // reverse loop for finding the pair before the last two projects and creating the lower tiles
         for (var i = jsonProjectData.projects.length - 3; i >= jsonProjectData.projects.length -4; i--){
             
             var project = jsonProjectData.projects[i];
-            console.log(i, project);
+           
 
             //constructing lower tiles
             const upperTiles = document.createElement('div');
             upperTiles.className = `previewTilesG20${i}`;
             previewTilesG2.appendChild(upperTiles);
-
+            //title
             const tileTiltle = document.createElement('div');
-            tileTiltle.id = `upperTile${i}`
+            tileTiltle.className = 'tileTitle'
             tileTiltle.textContent = project.title;
             upperTiles.appendChild(tileTiltle);
             
-
+            //list for description
             const tileDescription = document.createElement('ul');
             tileDescription.className = 'tileDescription';
             upperTiles.appendChild(tileDescription);
-
+            //project manager
             const projectManager = document.createElement('li');
             projectManager.className = 'projectManager';
             projectManager.textContent = `Manager: ${project.affiliation}`;
             tileDescription.appendChild(projectManager);
-            
+            //type of project
             const projectType = document.createElement('li');
             projectType.className = 'projectType';
             projectType.textContent = `Project Type: ${project.projectsType}`;
             tileDescription.appendChild(projectType);
-
+            //last updated
             const projectEndDate = document.createElement('li');
             projectEndDate.className = 'projectEndDate';
-            projectEndDate.textContent = `Completed in ${project.endDate}`;
+            projectEndDate.textContent = `Last updated: ${project.endDate}`;
             tileDescription.appendChild(projectEndDate);
-
+            //programming language
             const projectProgrammingLanguage = document.createElement('li');
             projectProgrammingLanguage.className = 'programmingLanguage';
             projectProgrammingLanguage.textContent = `Language: ${project.programmingLanguage}`;
             tileDescription.appendChild(projectProgrammingLanguage);
 
         };
-        
-
-        
-
-        
 
     } else {
         console.log(responseProject.status)
