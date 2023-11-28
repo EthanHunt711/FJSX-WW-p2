@@ -69,135 +69,102 @@ async function getProjects(){
 
         //targeting the div 
         const previewTiles = document.getElementById('previewTiles');
+        
+        //create the first group
+        const previewTilesG1 = document.createElement('div');
+        previewTilesG1.className = 'previewTilesG1'
+        previewTiles.appendChild(previewTilesG1);
 
 
-        for (var i = jsonProjectData.projects.length - 1; i >= jsonProjectData.projects.length -4; i--){
+        for (var i = jsonProjectData.projects.length - 1; i >= jsonProjectData.projects.length -2; i--){
             
-            var obj = jsonProjectData.projects[i];
-            console.log(obj);
+            var project = jsonProjectData.projects[i];
+            console.log(i, project);
+
+            //constructing upper tiles
+            const upperTiles = document.createElement('div');
+            upperTiles.className = `previewTilesG10${i}`;
+            previewTilesG1.appendChild(upperTiles);
+
+            const tileTiltle = document.createElement('div');
+            tileTiltle.id = `upperTile${i}`
+            tileTiltle.textContent = project.title;
+            upperTiles.appendChild(tileTiltle);
             
-            // //create tile
-            // const projectsTile = document.createElement('div');
-            // projectsTile.className = 'projectsTile';
+
+            const tileDescription = document.createElement('ul');
+            tileDescription.className = 'tileDescription';
+            upperTiles.appendChild(tileDescription);
+
+            const projectManager = document.createElement('li');
+            projectManager.className = 'projectManager';
+            projectManager.textContent = `Manager: ${project.affiliation}`;
+            tileDescription.appendChild(projectManager);
             
-            // //create tile title
-            // const projectsTileTitle = document.createElement('div');
-            // projectsTileTitle.className = 'projectsTileTitle';
-            // projectsTileTitle.textContent = project.title;
-            // projectsTile.appendChild(projectsTileTitle);
+            const projectType = document.createElement('li');
+            projectType.className = 'projectType';
+            projectType.textContent = `Project Type: ${project.projectsType}`;
+            tileDescription.appendChild(projectType);
 
-            // //create elemets list
-            // const projectTileDescription = document.createElement('ul');
-            // projectTileDescription.className = 'projecctTileDescription';
-            // projectsTile.appendChild(projectTileDescription);
+            const projectEndDate = document.createElement('li');
+            projectEndDate.className = 'projectEndDate';
+            projectEndDate.textContent = `Completed in ${project.endDate}`;
+            tileDescription.appendChild(projectEndDate);
 
-            // //Affiliation
-            // const affiliationDescription = document.createElement('li');
-            // affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
+            const projectProgrammingLanguage = document.createElement('li');
+            projectProgrammingLanguage.className = 'programmingLanguage';
+            projectProgrammingLanguage.textContent = `Language: ${project.programmingLanguage}`;
+            tileDescription.appendChild(projectProgrammingLanguage);
 
-            // //Type of projects
-            // projectTileDescription.appendChild(affiliationDescription);
-            // const projectTypeDescription = document.createElement('li');
-            // projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
 
-            // // the last update
-            // projectTileDescription.appendChild(projectTypeDescription);
-            // const endDateDescription = document.createElement('li');
-            // endDateDescription.textContent = `Last Update: ${project.endDate}`;
-
-            // //Programming Language used
-            // projectTileDescription.appendChild(endDateDescription);
-            // const programmingLanguageDescription = document.createElement('li');
-            // programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
-            // projectTileDescription.appendChild(programmingLanguageDescription);
-            
-            // console.log(projectsTile);
-            // previewTiles.appendChild(projectsTile);
         };
 
-        //function for looping the data file 
-        // jsonProjectData.projects.forEach(function(project){
+        //create the first group
+        const previewTilesG2 = document.createElement('div');
+        previewTilesG2.className = 'previewTilesG1'
+        previewTiles.appendChild(previewTilesG2);
+        
+        for (var i = jsonProjectData.projects.length - 3; i >= jsonProjectData.projects.length -4; i--){
             
-        //     //create tile
-        //     const projectsTile = document.createElement('div');
-        //     projectsTile.className = 'projectsTile';
+            var project = jsonProjectData.projects[i];
+            console.log(i, project);
+
+            //constructing lower tiles
+            const upperTiles = document.createElement('div');
+            upperTiles.className = `previewTilesG20${i}`;
+            previewTilesG2.appendChild(upperTiles);
+
+            const tileTiltle = document.createElement('div');
+            tileTiltle.id = `upperTile${i}`
+            tileTiltle.textContent = project.title;
+            upperTiles.appendChild(tileTiltle);
             
-        //     //create tile title
-        //     const projectsTileTitle = document.createElement('div');
-        //     projectsTileTitle.className = 'projectsTileTitle';
-        //     projectsTileTitle.textContent = project.title;
-        //     projectsTile.appendChild(projectsTileTitle);
 
-        //     //create elemets list
-        //     const projectTileDescription = document.createElement('ul');
-        //     projectTileDescription.className = 'projecctTileDescription';
-        //     projectsTile.appendChild(projectTileDescription);
+            const tileDescription = document.createElement('ul');
+            tileDescription.className = 'tileDescription';
+            upperTiles.appendChild(tileDescription);
 
-        //     //Affiliation
-        //     const affiliationDescription = document.createElement('li');
-        //     affiliationDescription.textContent = `Project Manager: ${project.affiliation}`;
-
-        //     //Type of projects
-        //     projectTileDescription.appendChild(affiliationDescription);
-        //     const projectTypeDescription = document.createElement('li');
-        //     projectTypeDescription.textContent = `Project Type: ${project.projectsType}`;
-
-        //     // the last update
-        //     projectTileDescription.appendChild(projectTypeDescription);
-        //     const endDateDescription = document.createElement('li');
-        //     endDateDescription.textContent = `Last Update: ${project.endDate}`;
-
-        //     //Programming Language used
-        //     projectTileDescription.appendChild(endDateDescription);
-        //     const programmingLanguageDescription = document.createElement('li');
-        //     programmingLanguageDescription.textContent = `Programming Language: ${project.programmingLanguage}`;
-        //     projectTileDescription.appendChild(programmingLanguageDescription);
+            const projectManager = document.createElement('li');
+            projectManager.className = 'projectManager';
+            projectManager.textContent = `Manager: ${project.affiliation}`;
+            tileDescription.appendChild(projectManager);
             
-        //     console.log(projectsTile);
-        //     previewTiles.appendChild(projectsTile);
-        // });
+            const projectType = document.createElement('li');
+            projectType.className = 'projectType';
+            projectType.textContent = `Project Type: ${project.projectsType}`;
+            tileDescription.appendChild(projectType);
 
-        
-        // //creating the first group of tile
-        // const previewTilesG1 = document.createElement('div');
-        // previewTilesG1.className = 'previewTilesG1';
-        // previewTiles.appendChild(previewTilesG1);
+            const projectEndDate = document.createElement('li');
+            projectEndDate.className = 'projectEndDate';
+            projectEndDate.textContent = `Completed in ${project.endDate}`;
+            tileDescription.appendChild(projectEndDate);
 
-        // //creating the second group of tiles        
-        // const previewTilesG2 = document.createElement('div');
-        // previewTilesG2.className = 'previewTilesG2';
-        // previewTiles.appendChild(previewTilesG2);
+            const projectProgrammingLanguage = document.createElement('li');
+            projectProgrammingLanguage.className = 'programmingLanguage';
+            projectProgrammingLanguage.textContent = `Language: ${project.programmingLanguage}`;
+            tileDescription.appendChild(projectProgrammingLanguage);
 
-        // //creating the first tile in the first group
-        // const previewTilesG101 = document.createElement('div');
-        // previewTilesG101.className = 'previewTilesG101';
-        // previewTilesG1.appendChild(previewTilesG101);
-        // // previewTilesG101.appendChild(document.getElementById('projectsTile6'));
-        
-       
-        
-
-        // //creating the second tile in the first group
-        // const previewTilesG102 = document.createElement('div');
-        // previewTilesG102.className = 'previewTilesG102';
-        // previewTilesG1.appendChild(previewTilesG102);
-        // // previewTilesG102.appendChild(document.getElementById('projectsTile5'));
-        
-
-        // //creating the first tile in the second group
-        // const previewTilesG201 = document.createElement('div');
-        // previewTilesG201.className = 'previewTilesG201';
-        // previewTilesG2.appendChild(previewTilesG201);
-        // // previewTilesG201.appendChild(document.getElementById('projectsTile4'));
-        
-
-        // //creating the second tile in the second group
-        // const previewTilesG202 = document.createElement('div');
-        // previewTilesG202.className = 'previewTilesG202';
-        // previewTilesG2.appendChild(previewTilesG202);
-        // // previewTilesG202.appendChild(document.getElementById('projectsTile3'));
-        
-
+        };
         
 
         
