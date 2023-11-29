@@ -160,7 +160,8 @@ main {
 #profileImageBig{
     background-color: #042331;
     border-radius: 5px;
-    width: 100%;    
+    width: 100%;  
+    object-fit: cover;  
 }
 
 #infoPreview{
