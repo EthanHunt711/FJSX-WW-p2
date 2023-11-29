@@ -1,0 +1,62 @@
+main{
+    display: block;
+    margin-top: 100px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#slideshow{
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
+.mainSlideShowContainer{
+    border: 2px solid #ccc;
+    height: 400px;
+    position: relative;
+}
+
+.mainSlideShowContainerDiv{
+    height: 100%;
+    display: flex;
+    width: 700%;
+}
+
+.educationTile{
+    flex-basis: 100%;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+
+.educationTile h2{
+    align-self: center;
+}
+
+.controls span{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.leftArrow{
+    left: 10px;
+}
+
+.rightArrow{
+    right: 10px
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px){
+    main{
+        margin-top: 150px;
+    }
+}
