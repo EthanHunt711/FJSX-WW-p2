@@ -1,6 +1,6 @@
 //function for displaying the about me section
 async function getInfoPreview(){
-    let responseInfo = await fetch("/data/personalInfo.json")
+    let responseInfo = await fetch("./data/personalInfo.json")
 
     if(responseInfo.ok){
         //parsing the personal info json file
@@ -62,7 +62,7 @@ async function getProjects(){
     // counter for making id
  
 
-    let responseProject = await fetch("/data/projects.json")
+    let responseProject = await fetch("./data/projects.json")
     if(responseProject.ok){
         //parsing the project json data file
         const jsonProjectData = await responseProject.json();

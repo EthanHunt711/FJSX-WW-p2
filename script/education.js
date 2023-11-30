@@ -1,7 +1,7 @@
 //function for retrieving educational history
 async function getEducation(){
     // fetch the json file
-    let responseEducation = await fetch("/data/education.json");
+    let responseEducation = await fetch("./data/education.json");
     // check if the json is connected
     if (responseEducation.ok){
         const jsonEducationData = await responseEducation.json();
