@@ -13,14 +13,18 @@ main{
 
 .mainSlideShowContainer{
     border: 2px solid #ccc;
+    border-radius: 4px;
+    border-style: double;
     height: 400px;
     position: relative;
+    overflow: hidden;
 }
 
 .mainSlideShowContainerDiv{
     height: 100%;
     display: flex;
     width: 700%;
+    transition: all 0.4s ease;
 }
 
 .educationTile{
@@ -29,10 +33,13 @@ main{
     flex-direction: column;
     justify-content: center;  
     align-items: center;
+    background-color: #063146;
+    color: #ccc;
 }
 
 .educationTile h2{
     align-self: center;
+    padding: 1em;
 }
 
 .controls span{
@@ -47,6 +54,11 @@ main{
 
 .rightArrow{
     right: 10px
+}
+
+.controls i{
+    font-size: 40px;
+    color: #ccc;
 }
 
 /* Medium devices */
