@@ -1,3 +1,10 @@
+/* The inspiration for this slideshow comes from a video on youtube
+ https://www.youtube.com/watch?v=rTB-UNl_B_Y&t=1157s  
+ this is to say that the prototype built in the video is just similar in some structures. 
+ All the interactions with json files and codes for retrieving the data is original.
+ */
+
+ 
 //function for retrieving educational history
 async function getEducation(){
     // fetch the json file
