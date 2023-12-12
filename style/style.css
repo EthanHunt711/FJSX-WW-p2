@@ -189,17 +189,6 @@ h1{
 }
 
 
-/* .projectsTile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0d74f5;
-    width: 300px;
-    height: 100%;
-    border-radius: 5px;
-    color: #fff;
-    padding: 1em;
-} */
 
 .previewTilesG1,
 .previewTilesG2{
@@ -234,6 +223,17 @@ h1{
     height: 100px;
     background-color: #fff;
 }
+
+.currentProject a{
+    font-size: 25px;
+    color: #0d74f5;
+}
+
+.currentProject a:hover{
+    font-size: 30px;
+    transition: all .4s;
+}
+
 
 
 /* FOOTER */
